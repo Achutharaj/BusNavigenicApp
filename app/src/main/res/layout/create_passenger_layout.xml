@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_login">
+
+    <TextView
+        android:id="@+id/Membertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Driver"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="01dp"
+        android:fontFamily="serif"/>
+
+    <ImageView
+        android:id="@+id/btnImage"
+        android:layout_marginTop="02dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:layout_below="@id/Membertitle"
+        android:layout_centerInParent="true"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/btnImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tilDriverName"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetPassName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/bg_til"
+            android:padding="5dp"
+            android:fontFamily="serif"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/tilDriverName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tilBusNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetPassMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Mobile No"
+            android:textStyle="bold"
+            android:maxLength="10"
+            android:textSize="15sp"
+            android:background="@drawable/bg_til"
+            android:padding="05dp"
+            android:fontFamily="serif"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/tilBusNo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tilBusName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetPassengerId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="User ID"
+            android:maxLength="7"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/bg_til"
+            android:padding="05dp"
+            android:fontFamily="serif"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/tilBusName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tilBusRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetPasspassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/bg_til"
+            android:padding="05dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/tilBusRoute"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tilDriverID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetConpassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:hint="Confirm password"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/bg_til"
+            android:padding="05dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnpassCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="@drawable/btndesign"
+        android:layout_below="@id/tilDriverID"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnpassUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:background="@drawable/btndesign"
+        android:layout_below="@id/tilDriverID"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "470213036818",
+    "firebase_url": "https://busnaviginicapp-16d8b.firebaseio.com",
+    "project_id": "busnaviginicapp-16d8b",
+    "storage_bucket": "busnaviginicapp-16d8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470213036818:android:5251972ea39052cf",
+        "android_client_info": {
+          "package_name": "com.example.achutharaj_achu_.busnavigenic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470213036818-2c07eictj0s51k5irvtp40ah0bu69gh8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.achutharaj_achu_.busnavigenic",
+            "certificate_hash": "1fd5a59da9244c9c5afc158ab03a9f9483da697e"
+          }
+        },
+        {
+          "client_id": "470213036818-mns59n5soinl8d054aac71lkc0kp70i4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs1rtzWLkSqj0QgTCNup82r2aeNOni8uI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470213036818-mns59n5soinl8d054aac71lkc0kp70i4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

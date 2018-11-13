@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gradient_bg_login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/loginImg"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bus_icon"/>
+
+    <TextView
+        android:layout_below="@id/loginImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Bus Navigenic"
+        android:textSize="30sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:id="@+id/loginTxt"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tstUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTxt"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetUserID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:background="@drawable/bg_til"
+            android:padding="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/tstUserID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tstpass">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tetpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:background="@drawable/bg_til"
+            android:padding="10dp"
+            android:layout_marginTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/tvforgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tstpass"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forget password?"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        />
+
+    <Button
+        android:layout_below="@id/tvforgotpass"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnsignin"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btndesign"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signin"/>
+
+    <TextView
+        android:id="@+id/tvNoaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnsignin"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorLink="@color/lightblue"
+        android:text="Do you haven't account.? Click Here"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        />
+
+</RelativeLayout>

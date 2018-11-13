@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BusNavigenic</string>
+    <string name="title_activity_maps">Map</string>
+    <!--<string name="underline"><u>Sign in</u></string>-->
+</resources>

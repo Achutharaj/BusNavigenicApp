@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/btndesign">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DriverNameLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Name   :   "
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+            <TextView
+                android:hint="Driver Name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/tvDrivername"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/DriverNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernamelayout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus NO               :   "
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+            <TextView
+                android:hint="Bus Number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/tvBusNo"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/useragelayout"
+            android:orientation="horizontal"
+            android:layout_below="@id/usernamelayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Name          :   "
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_below="@+id/usernamelayout"
+                android:textSize="15sp"
+                android:hint="Bus Name"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/tvBusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/useridlayout"
+            android:orientation="horizontal"
+            android:layout_below="@id/useragelayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Line             :   "
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_below="@id/useragelayout"
+                android:textColor="@color/black"
+                android:hint="Bus Route"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/tvBusRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="05dp"
+            android:id="@+id/divider"
+            android:layout_below="@id/useridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/lightblue"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="05dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DriverID"
+            android:orientation="horizontal"
+            android:layout_below="@id/divider">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Email   :   "
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_below="@id/useragelayout"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:id="@+id/tvDriverEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Driverpassword"
+        android:orientation="horizontal"
+        android:layout_below="@id/DriverID">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password           :   "
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:layout_below="@id/useragelayout"
+            android:textColor="@color/black"
+            android:hint="password"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/tvDriverpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_below="@id/Driverpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:id="@+id/nthg"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nthg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDriverDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:background="@drawable/btndesign"
+                android:padding="5dp"
+                />
+            <!--<Button-->
+                <!--android:id="@+id/btnDriverEdit"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Edit"-->
+                <!--android:fontFamily="serif"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/btndesign"-->
+                <!--android:padding="5dp"-->
+                <!--/>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
